@@ -67,6 +67,9 @@
 		);
 
 
+
+
+
 if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
 		
 		$counter = 0;
@@ -80,7 +83,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
 			}
 	}
 	echo '<p>სწორი პასუხების რაოდენობა: ' . $counter . '</p>';
-	var_dump($counter);
+	
 }
 ?>
 
@@ -88,6 +91,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
 
 	
 	<?php foreach ($quizze as $key => $qustions): ?>
+		
 		<hr>
 		<p>
 			<?php echo $qustions['title'];?>
