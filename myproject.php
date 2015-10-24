@@ -2,72 +2,86 @@
 	$quizze= array(
 				array(
 
-					'title' => 'შეკითხვა ნომერი პირველი(2 სწორი პასუხი)',
+					'title' => 'შეკითხვა ნომერი პირველი',
 					
 					'options' => array(
 					'პასუხი1','პასუხი2','პასუხი3','პასუხი4'
 					),
 					'correct_answer' => array(
-						'1','3'
+						1,3
 						),
 
 				),
 
 					array(
 
-					'title' => 'შეკითხვა ნომერი მეორე (2 სწორი პასუხი)',
+					'title' => 'შეკითხვა ნომერი მეორე',
 					
 					'options' => array(
 					'პასუხი1','პასუხი2','პასუხი3','პასუხი4'
 					),
 					'correct_answer' => array(
-						'1','2'
+						1,2
 						),
 				),
 
 
 					array(
 
-					'title' => 'შეკითხვა ნომერი მესამე (2 სწორი პასუხი)',
+					'title' => 'შეკითხვა ნომერი მესამე',
 					
 					'options' => array(
 					'პასუხი1','პასუხი2','პასუხი3','პასუხი4'
 					),
 					'correct_answer' => array(
-						'2','4'
+						2,4
 						),
 
 				),
 
 					array(
 
-					'title' => 'შეკითხვა ნომერი მეოთხე (2 სწორი პასუხი)',
+					'title' => 'შეკითხვა ნომერი მეოთხე',
 					
 					'options' => array(
 					'პასუხი1','პასუხი2','პასუხი3','პასუხი4'
 					),
 					'correct_answer' => array(
-						'1','3'
+						1,3
 						),
 				),
 
 					array(
 
-					'title' => 'შეკითხვა ნომერი მეხუთე (2 სწორი პასუხი)',
+					'title' => 'შეკითხვა ნომერი მეხუთე',
 					
 					'options' => array(
 					
 					'პასუხი1','პასუხი2','პასუხი3','პასუხი4'
 					),
 					'correct_answer' => array(
-						'3','4'
+						3,4
 						)
 				)
 
 		);
 
 
-
+if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
+		
+		$counter = 0;
+		
+		foreach ($_POST['options'] as $checkedIndex => $checkedValue){
+			
+			$_question = $quizze[$checkedIndex];
+			
+			if (in_array($_question['correct_answer'], $checkedValue)) {
+				$counter++;
+			}
+	}
+	echo '<p>სწორი პასუხების რაოდენობა: ' . $counter . '</p>';
+	var_dump($counter);
+}
 ?>
 
 <form>
