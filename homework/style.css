@@ -1,0 +1,14 @@
+body { background: #585858; color: white; }
+
+form { 	background: #157899;width: 30%;	margin: 0 auto;	margin-top: 10%; 
+	height: 225px; 	position: relative;	height: 350px; }
+
+form input {	width: 99%;	height: 50px; margin: 0 auto; }
+
+.wrap { position: absolute;	width: 100%; padding-top: 5%; }
+.wrap > label { font-size: 120%;}
+.sbm { width: 50%; margin-left: 24%;	margin-top: 5%;	height: 70px; }
+
+.login{	position: absolute; margin-left: 43%; margin-top: 5%; }
+.reg {	color: white; 	position: absolute; 	margin-left: 80%; 	margin-top: -10%; }
+.reg > h1 > a{	color: white; }
