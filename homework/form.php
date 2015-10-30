@@ -9,12 +9,12 @@
 
 
 		<div class="login">
-			<h1>Log in<h1>
+			<h1>Log In<h1>
 		</div><!--End login-->
 
 
 		<div class="reg">
-			<h1><a href="regform">Registration</a><h1>
+			<h1><a href="regform.php">Registration</a><h1>
 		</div><!--END reg-->
 	
 

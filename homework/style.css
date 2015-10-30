@@ -9,6 +9,9 @@ form input {	width: 99%;	height: 50px; margin: 0 auto; }
 .wrap > label { font-size: 120%;}
 .sbm { width: 50%; margin-left: 24%;	margin-top: 5%;	height: 70px; }
 
-.login{	position: absolute; margin-left: 43%; margin-top: 5%; }
+.login{	position: absolute; margin-left: 44%; margin-top: -7%; }
 .reg {	color: white; 	position: absolute; 	margin-left: 80%; 	margin-top: -10%; }
 .reg > h1 > a{	color: white; }
+
+
+
